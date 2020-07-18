@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Recy</string>
+    <string-array name="anime">
+        <item>Monday</item>
+        <item>Tues</item>
+        <item>Tues</item>
+        <item>Wec</item>
+        <item>Thurs</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+
+
+    </string-array>
 </resources>
