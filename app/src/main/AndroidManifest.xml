@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TabActivity">
+        <activity android:name=".NavPlay">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,10 +18,11 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".PageActivity">
+        <activity android:name=".TabActivity">
 
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".PageActivity"></activity>
+        <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

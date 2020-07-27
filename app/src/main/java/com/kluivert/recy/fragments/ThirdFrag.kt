@@ -91,7 +91,7 @@ class ThirdFrag : Fragment() {
 
             val item = event.clipData.getItemAt(0)
             val dragData = item.text
-            Toast.makeText(context!!,dragData,Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),dragData,Toast.LENGTH_SHORT).show()
             view.invalidate()
             val v = event.localState as View
             val owner = v.parent as ViewGroup

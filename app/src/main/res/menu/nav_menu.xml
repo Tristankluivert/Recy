@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <item android:id="@+id/firstFrag"
+            android:icon="@drawable/download"
+             android:title="First"/>
+
+        <item android:id="@+id/secondFrag"
+            android:icon="@drawable/fastforward"
+            android:title="Second"/>
+
+        <item android:id="@+id/thirdFrag"
+            android:icon="@drawable/focus"
+            android:title="Third"/>
+
+
+    <item android:title="Activities">
+
+        <menu>
+
+            <item android:id="@+id/secondActivity"
+                android:icon="@drawable/loading"
+                android:title="second"/>
+
+        </menu>
+
+    </item>
+
+</menu>

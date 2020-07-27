@@ -49,7 +49,7 @@ class SecondFrag : Fragment() {
             addNextIntentWithParentStack(intent)
             getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT)
         }
-       val notification = NotificationCompat.Builder(context!!, CHANNEL_ID)
+       val notification = NotificationCompat.Builder(requireContext(), CHANNEL_ID)
            .setContentTitle("Works")
            .setContentText("Beautiful code")
            .setContentIntent(pendingIntent)
@@ -58,7 +58,7 @@ class SecondFrag : Fragment() {
            .build()
 
 
-        val mana = NotificationManagerCompat.from(context!!)
+        val mana = NotificationManagerCompat.from(requireContext())
 
         btnNoti.setOnClickListener {
             mana.notify(NOTIFICATION_ID,notification)
@@ -76,7 +76,7 @@ class SecondFrag : Fragment() {
                 enableLights(true)
                 enableVibration(true)
             }
-           val manager = context!!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+           val manager = requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(noti)
 
         }
